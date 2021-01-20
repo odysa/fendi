@@ -1,0 +1,35 @@
+{
+  "name": "fendi",
+  "version": "0.0.1",
+  "description": "fendi generates everything",
+  "main": "index.js",
+  "bin": {
+    "fendi": "bin/fendi.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "ts-node bin/fendi.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/odysa/fendi.git"
+  },
+  "keywords": [
+    "cli"
+  ],
+  "author": "odysa",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/odysa/fendi/issues"
+  },
+  "homepage": "https://github.com/odysa/fendi#readme",
+  "devDependencies": {
+    "@types/node": "^14.14.22",
+    "tslint": "^6.1.3",
+    "typescript": "^4.1.3"
+  },
+  "dependencies": {
+    "chalk": "^4.1.0",
+    "commander": "^7.0.0"
+  }
+}
