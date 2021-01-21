@@ -8,7 +8,8 @@
   },
   "scripts": {
     "build": "tsc",
-    "start": "ts-node bin/fendi.ts"
+    "clean": "gulp clean:bundle",
+    "start": "node bin/fendi.js"
   },
   "repository": {
     "type": "git",
@@ -25,6 +26,10 @@
   "homepage": "https://github.com/odysa/fendi#readme",
   "devDependencies": {
     "@types/node": "^14.14.22",
+    "delete-empty": "^3.0.0",
+    "gulp": "^4.0.2",
+    "gulp-clean": "^0.4.0",
+    "ts-node": "^9.1.1",
     "tslint": "^6.1.3",
     "typescript": "^4.1.3"
   },
