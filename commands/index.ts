@@ -1,7 +1,7 @@
 import { InitAction } from '../actions/init.action';
 import { InitCommand } from './init.command';
 import { CommanderStatic } from 'commander';
-import * as chalk from 'chalk'
+import * as chalk from 'chalk';
 export class CommandLoader {
   public static load(program: CommanderStatic) {
     new InitCommand(new InitAction()).load(program);

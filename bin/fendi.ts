@@ -13,7 +13,7 @@ function bootstrap() {
 
   CommandLoader.load(program);
 
-  Command.parse(process.argv);
+  program.parse(process.argv);
 
   if (!program.args.length) {
     program.outputHelp();

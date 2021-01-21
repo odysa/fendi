@@ -9,7 +9,8 @@
   "scripts": {
     "build": "tsc",
     "clean": "gulp clean:bundle",
-    "start": "node bin/fendi.js"
+    "start": "node bin/fendi.js",
+    "test": "node bin/fendi.js -h"
   },
   "repository": {
     "type": "git",

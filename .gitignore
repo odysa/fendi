@@ -120,3 +120,5 @@ dist
 
 # OS
 .DS_Store
+
+yarn.lock
