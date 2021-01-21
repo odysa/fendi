@@ -1,7 +1,7 @@
-import * as Commander from 'commander';
+import * as Command from 'commander';
 import { CommandLoader } from '../commands';
 function bootstrap() {
-  const program = Commander;
+  const program = Command;
   program
     .version(
       require('../package.json').version,
@@ -12,7 +12,9 @@ function bootstrap() {
     .helpOption('-h, --help', 'Output usage guide');
 
   CommandLoader.load(program);
-  Commander.parse(process.argv);
+
+  Command.parse(process.argv);
+
   if (!program.args.length) {
     program.outputHelp();
   }
